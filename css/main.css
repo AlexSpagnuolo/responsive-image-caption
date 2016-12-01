@@ -29,13 +29,47 @@ figure {
 .img-flex {
   width: 100%;
   margin: 0;
+  display: block;
 }
 
 h2 {
   font-family: "Denk One", sans-serif;
+  font-size: 1.5rem;
 }
 
 figcaption {
   padding: 1rem;
   padding-top: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  figure {
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 60%;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    color: white;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
 }
